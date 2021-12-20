@@ -9,7 +9,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Soft Maple',
   tagline: 'It\'s cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://softmaple-website.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -25,13 +25,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/SoftMaple/docs/edit/main/website/',
+          editUrl: 'https://github.com/SoftMaple/docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SoftMaple/docs/edit/main/website/blog/',
+            'https://github.com/SoftMaple/docs/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
