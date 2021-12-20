@@ -16,8 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            // TODO
-            to="/docs/intro"> 
+            to="https://softmaple.vercel.app/"> 
             Try it
           </Link>
         </div>
