@@ -4,12 +4,16 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-// @ts-ignore
+// vercel.app
+const mainSiteUrl = 'https://softmaple-website.vercel.app/';
+const editorPageUrl = 'https://softmaple.vercel.app/';
+const insightsPageUrl = 'https://softmaple-insights.vercel.app/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Soft Maple',
   tagline: 'It\'s cool',
-  url: 'https://softmaple-website.vercel.app/',
+  url: mainSiteUrl,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,6 +61,11 @@ const config = {
             position: "left",
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: insightsPageUrl,
+            label: 'Insights (beta)',
+            position: 'left',
+          },
           {
             href: 'https://github.com/SoftMaple/docs',
             label: 'GitHub',
@@ -110,6 +119,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  customFields: {
+    editorPageUrl,
+  }
 };
 
 module.exports = config;
