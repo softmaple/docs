@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://softmaple.vercel.app/"> 
+            to={siteConfig.customFields.editorPageUrl}> 
             Try it
           </Link>
         </div>
