@@ -63,7 +63,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: insightsPageUrl,
-            label: 'Insights (demo)',
+            label: 'Insights (Beta)',
             position: 'left',
           },
           {
