@@ -5,9 +5,9 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // vercel.app
-const mainSiteUrl = 'https://softmaple-website.vercel.app/';
+const mainSiteUrl = 'https://website.softmaple.vercel.app/';
 const editorPageUrl = 'https://softmaple.vercel.app/';
-const insightsPageUrl = 'https://softmaple-insights.vercel.app/';
+const insightsPageUrl = 'https://insights.softmaple.vercel.app/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
