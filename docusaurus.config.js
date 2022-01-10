@@ -11,7 +11,7 @@ const insightsPageUrl = 'https://insights.softmaple.xyz/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Soft Maple',
+  title: 'SoftMaple',
   tagline: 'It\'s cool',
   url: mainSiteUrl,
   baseUrl: '/',
@@ -48,11 +48,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Soft Maple',
-        logo: {
-          alt: 'Soft Maple Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'SoftMaple',
+        // logo: {
+        //   alt: 'Soft Maple Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             to: "docs/get-started",
