@@ -11,7 +11,7 @@ const insightsPageUrl = 'https://insights.softmaple.xyz/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Soft Maple',
+  title: 'SoftMaple',
   tagline: 'It\'s cool',
   url: mainSiteUrl,
   baseUrl: '/',
