@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Soft Maple editor stores your data in the browser localStorage.
+        SoftMaple editor stores your data in the browser localStorage.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Just type like Microsoft Word or Google Doc and Soft Maple will show you the results -- LaTeX source code.
+        Just type like Microsoft Word or Google Doc and SoftMaple will show you the results -- LaTeX source code.
       </>
     ),
   },

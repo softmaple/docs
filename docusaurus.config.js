@@ -50,7 +50,7 @@ const config = {
       navbar: {
         title: 'SoftMaple',
         // logo: {
-        //   alt: 'Soft Maple Logo',
+        //   alt: 'SoftMaple Logo',
         //   src: 'img/logo.svg',
         // },
         items: [
@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Soft Maple, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SoftMaple, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
