@@ -18,7 +18,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Soft Maple', // Usually your GitHub org/user name.
+  organizationName: 'SoftMaple', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
   presets: [
@@ -35,7 +35,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SoftMaple/docs/edit/main/blog/',
+            'https://github.com/SoftMaple/docs/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
