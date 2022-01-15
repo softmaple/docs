@@ -4,10 +4,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-// vercel app
-const mainSiteUrl = 'https://website.softmaple.xyz/';
+// vercel apps
+const mainSiteUrl = 'https://docs.softmaple.xyz/';
 const editorPageUrl = 'https://softmaple.xyz';
 const insightsPageUrl = 'https://insights.softmaple.xyz/';
+// additional pages
+const blogPageUrl = 'https://blog.softmaple.xyz/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -47,6 +49,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'announcementBar-2', // Increment on change
+        content: `⭐️ If you like SoftMaple, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SoftMaple/Editor">GitHub</a>`,
+      },
       navbar: {
         title: 'SoftMaple',
         // logo: {
@@ -110,6 +116,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/SoftMaple/docs',
               },
+              {
+                label: 'Hashnode',
+                href: blogPageUrl,
+              }
             ],
           },
         ],
