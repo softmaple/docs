@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome
 authors: [yadong]
-tags: [hello, Eorg]
+tags: [hello, SoftMaple]
 ---
 
 TODO
