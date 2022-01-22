@@ -9,16 +9,23 @@ import React, { useEffect } from 'react';
  */
 export const TwitterEmbedded = ({ children }) => {
   useEffect(() => {
-    const script = document.createElement('script');
+    let script = document.getElementById('twitter-wjs');
 
-    script.src = "https://platform.twitter.com/widgets.js";
-    script.async = true;
-    script.charset = "utf-8";
+    if (!script) {
+      script = document.createElement('script');
 
-    document.body.appendChild(script);
+      script.src = "https://platform.twitter.com/widgets.js";
+      script.async = true;
+      script.charset = "utf-8";
+      script.id = "twitter-wjs";
+
+      document.body.appendChild(script);
+    }
 
     return () => {
-      document.body.removeChild(script);
+      if (script) {
+        document.body.removeChild(script);
+      }
     }
   }, []);
 
