@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import useThemeContext from "@theme/hooks/useThemeContext";
 
 /**
  * Embeds a twitter post
@@ -8,26 +8,27 @@ import React, { useEffect } from 'react';
  * click `Embed Twitter` on the tweet and it will be generated from here: https://publish.twitter.com/
  */
 export const TwitterEmbedded = ({ children }) => {
+  const { isDarkTheme } = useThemeContext();
+
   useEffect(() => {
-    let script = document.getElementById('twitter-wjs');
-
-    if (!script) {
-      script = document.createElement('script');
-
-      script.src = "https://platform.twitter.com/widgets.js";
-      script.async = true;
-      script.charset = "utf-8";
-      script.id = "twitter-wjs";
-
-      document.body.appendChild(script);
-    }
+    const script = document.createElement('script');
+    script.src = 'https://platform.twitter.com/widgets.js';
+    script.async = true;
+    document.body.appendChild(script);
 
     return () => {
-      if (script) {
-        document.body.removeChild(script);
-      }
+      document.body.removeChild(script);
     }
   }, []);
 
-  return children;
+  return (
+    <blockquote
+      className="twitter-tweet"
+      data-theme={isDarkTheme ? "dark" : "light"}
+      // TODO: Remount the DOM when color changes
+      // key={isDarkTheme}
+    >
+      {children}
+    </blockquote>
+  );
 }
