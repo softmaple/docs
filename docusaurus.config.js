@@ -122,6 +122,21 @@ const config = {
               }
             ],
           },
+          {
+            title: 'Acknowledgements',
+            items: [
+              {html: `
+              <a target="_blank" rel="noopener noreferrer" href="https://vercel.com?utm_source=SoftMaple&utm_campaign=oss">
+                <img
+                  alt="Powered by Vercel"
+                  style="margin-top: 8px"
+                  height="32"
+                  src="https://ik.imagekit.io/1winv85cn8g/SoftMaple/powered-by-vercel_7qHjyIz41.svg"
+                />
+              </a>`
+             }
+            ]
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SoftMaple, Inc. Built with Docusaurus.`,
       },
