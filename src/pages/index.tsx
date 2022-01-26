@@ -16,8 +16,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={siteConfig.customFields.editorPageUrl}> 
-            Try it
+            to="/docs/get-started"> 
+            SoftMaple Tutorial &nbsp;{"<"} 3min ⏱️
           </Link>
         </div>
       </div>
@@ -25,7 +25,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout

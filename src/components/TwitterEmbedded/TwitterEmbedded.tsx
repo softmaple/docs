@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import useThemeContext from "@theme/hooks/useThemeContext";
 
+type TwitterEmbeddedProps = {
+  children: React.ReactNode;
+};
+
 /**
- * Embeds a twitter post
+ * Embeds a twitter post.
  * 
- * @param {React.ReactNode} children - the blockquote of the tweet
  * click `Embed Twitter` on the tweet and it will be generated from here: https://publish.twitter.com/
  */
-export const TwitterEmbedded = ({ children }) => {
+export const TwitterEmbedded: FC<TwitterEmbeddedProps> = ({ children }) => {
   const { isDarkTheme } = useThemeContext();
 
   useEffect(() => {
