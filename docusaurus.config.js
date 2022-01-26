@@ -51,7 +51,7 @@ const config = {
     ({
       announcementBar: {
         id: 'announcementBar-2', // Increment on change
-        content: `⭐️ If you like SoftMaple, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SoftMaple/Editor">GitHub</a>`,
+        content: `Try it <a target="_blank" rel="noopener noreferrer" href=${editorPageUrl}>now</a>!&nbsp;⭐️ If you like SoftMaple, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/SoftMaple/Editor">GitHub</a>.`,
       },
       navbar: {
         title: 'SoftMaple',
